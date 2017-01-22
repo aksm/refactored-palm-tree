@@ -17,8 +17,8 @@ class Button extends React.Component {
 		return (
 			<div id={styles.buttonfan}>
 		    <button className={styles.btnDesign}><h1>View A Show</h1></button>
-		    <button className={styles.btnDesign}><h1>Create A Show</h1></button>
-		    <button onClick={this.handleClick} className={styles.btnDesign}><h1>Get Started!</h1></button>
+		    <button onClick={this.handleClick} className={styles.btnDesign}><h1>Create A Show</h1></button>
+		    <button className={styles.btnDesign}><h1>About</h1></button>
 		  </div>
 		)
 	}

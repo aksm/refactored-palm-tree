@@ -15,14 +15,11 @@ class Button extends React.Component {
 	
 	render() {
 		return (
-			<div>
-			<div className={styles.buttonhouse} id={styles.buttonfan}>
+			<div id={styles.buttonfan}>
 		    <button className={styles.btnDesign}><h1>View A Show</h1></button>
 		    <button className={styles.btnDesign}><h1>Create A Show</h1></button>
 		    <button onClick={this.handleClick} className={styles.btnDesign}><h1>Get Started!</h1></button>
 		  </div>
-		    <button onClick={this.handleClick}>this button</button>
-		    </div>
 		)
 	}
 }

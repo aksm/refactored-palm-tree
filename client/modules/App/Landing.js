@@ -13,11 +13,11 @@ class Landing extends React.Component {
 
     return (
       <div>
+        <Video />
         <Button />
 
-        <img src="./public/images/micchecklogo.png" />
+        <img className={styles.logo} src="./public/images/micchecklogo.png" />
 
-        <Video />
 
       </div>
     )

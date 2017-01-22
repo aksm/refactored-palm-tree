@@ -27,9 +27,10 @@ export class App extends Component {
     twilioStart();
   }
 
-  toggleAddPostSection = () => {
-    this.props.dispatch(toggleAddPost());
-  };
+  // toggleAddPostSection = () => {
+  //   this.props.dispatch(toggleAddPost());
+  // };
+
   render() {
     return (
       <div>
@@ -81,12 +82,11 @@ export class App extends Component {
     );
   }
 }
-
-App.propTypes = {
-  children: PropTypes.object.isRequired,
-  dispatch: PropTypes.func.isRequired,
-  intl: PropTypes.object.isRequired,
-};
+// App.propTypes = {
+//   children: PropTypes.object.isRequired,
+//   dispatch: PropTypes.func.isRequired,
+//   intl: PropTypes.object.isRequired,
+// };
 
 // Retrieve data from store as props
 function mapStateToProps(store) {
@@ -94,5 +94,4 @@ function mapStateToProps(store) {
     intl: store.intl,
   };
 }
-
 export default connect(mapStateToProps)(App);

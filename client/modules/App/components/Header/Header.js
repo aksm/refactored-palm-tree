@@ -28,6 +28,11 @@ export function Header(props, context) {
             : null
         }*/}
       </div>
+{/*  <div id="video">
+   <video type="video/mp4" src="/public/miccheckbg.mp4" autoPlay loop>
+      Your browser does not support the video tag.
+    </video>
+  </div>*/}      
     </div>
   );
 }

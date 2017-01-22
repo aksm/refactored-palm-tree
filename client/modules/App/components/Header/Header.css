@@ -59,6 +59,9 @@
 .selected {
   border-bottom: 1px solid #fff;
 }
+/*video {
+  background: url("../../miccheckbg.mp4");
+}*/
 
 @media (max-width: 767px){
   .add-post-button{

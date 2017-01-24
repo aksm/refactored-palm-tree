@@ -1,10 +1,11 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 
-import Video from './components/Video';
-import Button from './components/Button';
+import Video from './components/Landing/Video';
+import Button from './components/Landing/Button';
 
 import styles from './Landing.css';
+// import { Grid, Row, Col } from 'react-bootstrap';
 
 // Base stylesheet
 class Landing extends React.Component {
@@ -20,6 +21,7 @@ class Landing extends React.Component {
 
 
       </div>
+
     )
   }
 }

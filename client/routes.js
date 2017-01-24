@@ -3,6 +3,7 @@ import React from 'react';
 import { Router, Route, IndexRoute } from 'react-router';
 import App from './modules/App/App';
 import Landing from './modules/App/Landing';
+import TalentInput from './modules/App/TalentInput';
 
 // require.ensure polyfill for node
 if (typeof require.ensure !== 'function') {
@@ -43,5 +44,6 @@ export default (
       }}
     />*/}
   {/*</Route>*/}
+  <Route path="/talent" component={TalentInput} />    
   </Router>
 );

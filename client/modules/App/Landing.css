@@ -29,6 +29,7 @@
 }
 /*VIDEO PLAYER CSS*/
 .video {
+  position: fixed;
 
 /*    position: fixed;
     top: 50%;
@@ -41,12 +42,12 @@
     -ms-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-*/    /*background: url(../video/miccheckbg.mp4) no-repeat;*/
-    /*background-size: contain;*/
-    width: 100% !important;
+    transform: translateX(-50%) translateY(-50%);*/
+/*    background: url(/miccheckbg.mp4) no-repeat;
+    background-size: contain;*/
+    width: auto !important;
 /*    width: 100%;*/
-    height: auto !important;
+    height: 100% !important;
 }
 
 

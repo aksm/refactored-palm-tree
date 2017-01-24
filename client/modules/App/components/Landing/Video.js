@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../Landing.css';
+import styles from '../../Landing.css';
 
 class Video extends React.Component {
 	constructor(props) {

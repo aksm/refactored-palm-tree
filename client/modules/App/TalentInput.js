@@ -16,21 +16,30 @@ class TalentInput extends React.Component {
     super(props);
     this.state = {
       isMounted: false,
-      // picture: '',
-      // name: {
-      //   first: '',
-      //   last: ''
-      // },
-      // type: '',
-      // genre: '',
-      // bio: ''
+      picture: '',
+      name: {
+        first: '',
+        last: ''
+      },
+      type: '',
+      genre: '',
+      bio: ''
     };
+    this.setField = this.setField.bind(this);
   }
   componentDidMount() {
     this.setState({isMounted: true}); // eslint-disable-line
     change();
   }
-
+  setField(input) {
+    console.log(input);
+    if(input.name) {
+      this.setState({name: input.name});
+    } else if(input.type) {
+      this.setState({picture: 'working'});
+    console.log(this.state);
+    }
+  }
 
   render() {
     return (
@@ -39,9 +48,9 @@ class TalentInput extends React.Component {
 
         <StartButton />
 
-        <StageNameSubmit />
+        <StageNameSubmit setField={ this.setField } />
 
-        <PerformerSelect />
+        <PerformerSelect setField={ this.setField } />
 
         <ArtistStyleInput />
 

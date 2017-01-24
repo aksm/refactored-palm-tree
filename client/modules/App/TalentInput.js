@@ -32,12 +32,10 @@ class TalentInput extends React.Component {
     change();
   }
   setField(input) {
-    console.log(input);
     if(input.name) {
       this.setState({name: input.name});
     } else if(input.type) {
       this.setState({picture: 'working'});
-    console.log(this.state);
     }
   }
 
@@ -63,4 +61,9 @@ class TalentInput extends React.Component {
   }
 }
 
-module.exports = TalentInput;
+function mapStateToProps(store) {
+  return {
+    intl: store.intl,
+  };
+}
+export default connect(mapStateToProps)(TalentInput);

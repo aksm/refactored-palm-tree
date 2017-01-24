@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../../TalentInput.css';
+import { Button } from 'react-bootstrap';
 
 class PerformerSelect extends React.Component {
   constructor(props) {
@@ -41,7 +42,7 @@ class PerformerSelect extends React.Component {
 				  	<span>Poet</span>
 				  	<br />
 					<br />
-	        <button type="submit" id="submit2">Submit</button>
+	        <Button type="submit" id="submit2">Submit</Button>
 				</form>
       </div>
 		)

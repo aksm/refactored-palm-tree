@@ -9,6 +9,14 @@ import styles from './Landing.css';
 
 // Base stylesheet
 class Landing extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { isMounted: false };
+  }
+
+  componentDidMount() {
+    this.setState({isMounted: true}); // eslint-disable-line
+  }
 
   render() {
 
@@ -27,4 +35,11 @@ class Landing extends React.Component {
 }
 
 
-module.exports = Landing;
+// module.exports = Landing;
+
+function mapStateToProps(store) {
+  return {
+    intl: store.intl,
+  };
+}
+export default connect(mapStateToProps)(Landing);

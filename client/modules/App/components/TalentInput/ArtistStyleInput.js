@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../../TalentInput.css';
+import { Button } from 'react-bootstrap';
 
 class ArtistStyleInput extends React.Component {
 	
@@ -13,7 +14,7 @@ class ArtistStyleInput extends React.Component {
 		       		<input type="text" id="name" name="user_name" />
 				  	</div>
 			  	</form>
-			  	<button type="submit" id="submit3">Submit</button>
+			  	<Button type="submit" id="submit3">Submit</Button>
 			</div>
 		)
 	}

@@ -15,9 +15,9 @@ class Button extends React.Component {
 	render() {
 		return (
 			<div id={styles.buttonfan}>
-		    <button onClick={() => this.handleClick('/viewer')} className={styles.btnDesign}><h1>View A Show</h1></button>
-		    <button onClick={() => this.handleClick('/talent')} className={styles.btnDesign}><h1>Create A Show</h1></button>
-		    <button onClick={() => this.handleClick('/about')} className={styles.btnDesign}><h1>About</h1></button>
+		    <button onClick={() => this.handleClick('/viewer')} className={styles.btnDesign}>View A Show</button>
+		    <button onClick={() => this.handleClick('/talent')} className={styles.btnDesign}>Create A Show</button>
+		    <button onClick={() => this.handleClick('/about')} className={styles.btnDesign}>About</button>
 		  </div>
 		)
 	}

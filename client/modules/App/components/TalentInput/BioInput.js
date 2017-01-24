@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../../TalentInput.css';
+import { Button } from 'react-bootstrap';
 
 class BioInput extends React.Component {
 	
@@ -15,7 +16,7 @@ class BioInput extends React.Component {
 							   <br />
 							        
 							   </form>
-							   <button type="submit" id="submit4">Submit</button>
+							   <Button type="submit" id="submit4">Submit</Button>
 							</div>
 		)
 	}

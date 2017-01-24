@@ -28,6 +28,7 @@ button {
   height: 40px;
   font-family: 'Roboto';
   font-size: 1em;
+  color: black;
 }
 form {
   padding: 5px;

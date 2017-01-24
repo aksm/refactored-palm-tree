@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../../TalentInput.css';
+import { Button } from 'react-bootstrap';
 
 class StageNameSubmit extends React.Component {
   constructor(props) {
@@ -46,7 +47,7 @@ class StageNameSubmit extends React.Component {
 				    <input type="text" id="lastName" name="lastName" value={this.state.name.last} onChange={this.handleChange}/>
 					</div>
 				  <br />
-				  <button type="submit" id="submit1">Submit</button>
+				  <Button type="submit" id="submit1">Submit</Button>
 				</form>
 		  </div>
 		)

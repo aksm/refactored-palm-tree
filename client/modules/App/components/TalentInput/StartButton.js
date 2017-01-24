@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../../TalentInput.css';
+import { Button } from 'react-bootstrap';
 
 class StartButton extends React.Component {
 	
@@ -8,7 +9,7 @@ class StartButton extends React.Component {
 			<div className={styles.container} id="start">
    			<h2>Click to begin your performer profile on Mic Check</h2>
    			<br />
-				<button type="submit" id="start">Start</button>
+				<Button type="submit" id="start">Start</Button>
 			</div>
 		)
 	}

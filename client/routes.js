@@ -4,6 +4,7 @@ import { Router, Route, IndexRoute } from 'react-router';
 import App from './modules/App/App';
 import Landing from './modules/App/Landing';
 import TalentInput from './modules/App/TalentInput';
+import Performer from './modules/App/Performer';
 
 // require.ensure polyfill for node
 if (typeof require.ensure !== 'function') {
@@ -34,7 +35,7 @@ export default (
         });
       }}
     />*/}
-  <Route path="/room" component={App} />    
+  <Route path="/room" component={Performer} />    
 {/*    <Route
       path="/index"
       getComponent={(nextState, cb) => {
